@@ -8,6 +8,11 @@ body {
     overflow-x: hidden;
 }
 
+.pad-left-right {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
 @font-face {
     font-family: 'Poppins';
     src: url('/assets/fonts/Poppins/Poppins-bold.ttf') format('truetype');
