@@ -5,15 +5,37 @@
     padding-top: 30px;
     padding-bottom: 30px;
 
-    h1 {
+    h1, p {
+        margin: 0;
         color: white;
+        font-weight: 400;
+        font-size: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.05em;
+    }
+
+    p {
+        color: #1CDAE6;
+    }
+
+    .cutted-i {
+        background: linear-gradient(0deg,  white 65%, transparent 30%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; /* Postavite na transparentno kako bi gradijent bio vidljiv */
+    }
+
+    .cutted-i-top {
+        background-color: #9747FF;
     }
 
     a {
         color: white;
         text-decoration: none;
         font-size: 28px;
-        font-weight: 400;
+        font-weight: 300;
 
         &:hover {
             color: #1CDAE6;
