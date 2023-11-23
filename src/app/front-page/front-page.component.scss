@@ -1,6 +1,52 @@
-.front-page-image {
-    width: 40%;
-    height: 70vh;
+.front-page {
+    height: 80vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    
+.front-page-image {
+    width: 30%;
+
+
+}
+
+.front-page-headline {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    span {
+        color: white;
+        font-weight: 400;
+        font-size: 64px;
+        transform: rotate(-90deg);
+        display: inline-block;
+    }
+
+    h2 {
+        color: white;
+        margin: 0;
+        font-weight: 700;
+        font-size: 70px;
+        margin-bottom: 0;
+        letter-spacing: 0.08em;
+    }
+
+    h3 {
+        color: #9747FF;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 60px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
