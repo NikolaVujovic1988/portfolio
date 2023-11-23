@@ -75,15 +75,15 @@
       }
       
       .header-navbar a:nth-child(1) {
-        animation-delay: 1s;
-      }
-      
-      .header-navbar a:nth-child(2) {
         animation-delay: 1.5s;
       }
       
-      .header-navbar a:nth-child(3) {
+      .header-navbar a:nth-child(2) {
         animation-delay: 2s;
+      }
+      
+      .header-navbar a:nth-child(3) {
+        animation-delay: 2.5s;
       }
 }
 
