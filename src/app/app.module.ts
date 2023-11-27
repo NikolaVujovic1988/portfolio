@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { FrontPageFooterComponent } from './front-page-footer/front-page-footer.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
