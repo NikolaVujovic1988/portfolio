@@ -2,15 +2,12 @@
 
 
 .front-page {
-    min-height: 80vh;
+    min-height: 70vh;
     width: 100vw;
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url('/assets/images/frontpage-bg-blur.png');
-    background-repeat: no-repeat;
-    background-position-x: -10vw;
 }
 
 .front-page-image {
@@ -20,20 +17,17 @@
 
 
     .profile-image {
-        position: relative;
-        margin-bottom: -17vh;
+        // position: relative;
         margin-left: 7vw;
         margin-right: 7vw;
         width: 100%;
         height: auto;
+        background-image: url('/assets/images/frontpage-bg-blur.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        // background-position-x: -10vw;
+    
     }
-
-    // .profile-image-bg {
-    //     position: absolute;
-    //     left: 0;
-    //     top: 10vh;
-
-    // }
 
     img {}
 
