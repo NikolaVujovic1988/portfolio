@@ -105,14 +105,16 @@
     width: 100svw;
     width: 100%;
     position: absolute;
-    top: 10vh;
+    top: 0;
 
 
 
     .footer-shape {
-        width: 100%;
+        // width: 100svw;
+        max-width: 100%;
         height: 20svh;
         margin-top: -15vh;
+        object-fit: cover;
 
         img {
             width: 100%;
@@ -141,7 +143,7 @@
         height: 20vh;
         display: flex;
         align-items: center;
-        margin-top: -20svh;
+        margin-top: -15svh;
 
         .design-line {
             width: 10%;
@@ -155,6 +157,8 @@
 
         .icons-container {
             display: flex;
+            justify-content: space-between;
+            align-items: center;
 
             .icons {
                 width: 30px;
@@ -170,6 +174,37 @@
                     cursor: pointer;
                 }
             }
+
+            .footer-scrol-down {
+                position: absolute;
+                right: 5%;
+                bottom: 0%;
+            
+                    img {
+                      filter: brightness(0) invert(1);
+                      animation: fadeInOut 5s infinite;
+                      cursor: pointer;
+                    }
+                  
+                  // Definisanje animacije
+                  @keyframes fadeInOut {
+                    0%, 100% { opacity: 0; }
+                    50% { opacity: 1; }
+                  }
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .footer-contact {
+            color: white;
+            text-decoration: none;
+            margin-left: 21px;
+            margin-right: 21px;
+            font-size: 23px;
+            font-weight: 400;
         }
 
 
