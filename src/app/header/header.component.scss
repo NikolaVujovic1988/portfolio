@@ -4,6 +4,8 @@
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    position: sticky;
+    top: 0;
 
     h1, p {
         margin: 0;
@@ -24,7 +26,7 @@
         background: linear-gradient(0deg,  white 65%, transparent 30%);
         -webkit-background-clip: text;
         background-clip: text;
-        color: transparent; /* Postavite na transparentno kako bi gradijent bio vidljiv */
+        color: transparent; 
     }
 
     .cutted-i-top {
