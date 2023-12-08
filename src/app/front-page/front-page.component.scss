@@ -145,6 +145,7 @@
         align-items: center;
         margin-top: -15svh;
 
+
         .design-line {
             width: 10%;
             height: 5px;
@@ -159,6 +160,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding-left: 2% !important;
+
 
             .icons {
                 width: 30px;
@@ -166,6 +169,7 @@
                 display: flex;
                 margin-left: 21px;
                 margin-right: 21px;
+
 
                 &:hover {
                     // width: 35px;
@@ -179,18 +183,28 @@
                 position: absolute;
                 right: 5%;
                 bottom: 0%;
-            
-                    img {
-                      filter: brightness(0) invert(1);
-                      animation: fadeInOut 5s infinite;
-                      cursor: pointer;
+
+                img {
+                    filter: brightness(0) invert(1);
+                    animation: slideDown 5s infinite;
+                    cursor: pointer;
+                }
+
+                @keyframes slideDown {
+
+                    0%,
+                    100% {
+                        transform: translateY(-150%);
+                        /* Počinje izvan vidljivog prostora, iznad */
+                        opacity: 0;
                     }
-                  
-                  // Definisanje animacije
-                  @keyframes fadeInOut {
-                    0%, 100% { opacity: 0; }
-                    50% { opacity: 1; }
-                  }
+
+                    50% {
+                        transform: translateY(0);
+                        /* Dolazi na originalnu poziciju */
+                        opacity: 1;
+                    }
+                }
             }
         }
 
@@ -224,7 +238,7 @@
     }
 }
 
-@media screen and (min-width: 1799px) {
+@media screen and (min-width: 1399px) {
 
     .front-page-headline {
         .button {
