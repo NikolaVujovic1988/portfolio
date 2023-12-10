@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+
+  activeLink: string = '';
+
+    setActiveLink(link: string): void {
+        this.activeLink = link;
+    }
 }

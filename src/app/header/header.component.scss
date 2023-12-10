@@ -9,6 +9,11 @@
   z-index: 999;
   background-color: #141D2F;
 
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
   h1,
   p {
     margin: 0;
@@ -101,4 +106,10 @@
 .header-navbar {
   display: flex;
   gap: 30px;
+}
+
+.active-link {
+  color: #1CDAE6!important; 
+  text-decoration: 2px solid #9747FF underline !important;
+  padding-bottom: 8px;
 }
