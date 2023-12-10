@@ -2,7 +2,7 @@
 
 
 .front-page {
-    min-height: 70vh;
+    min-height: 90svh;
     width: 100vw;
     max-width: 100%;
     display: flex;
@@ -38,6 +38,7 @@
     width: 100svw;
     max-width: 100%;
     z-index: 1;
+    padding-bottom: 20vh;
 
     .introdution {
         align-items: center;
