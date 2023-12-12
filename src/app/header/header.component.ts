@@ -13,4 +13,8 @@ export class HeaderComponent {
     setActiveLink(link: string): void {
         this.activeLink = link;
     }
+
+    resetActiveLink(): void {
+      this.activeLink = '';
+  }
 }
