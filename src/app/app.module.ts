@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { FrontPageFooterComponent } from './front-page-footer/front-page-footer.component';
 import { AboutMeComponent } from "./about-me/about-me.component";
+import { SkillsComponent } from "./skills/skills.component";
 
 
 @NgModule({
@@ -15,13 +16,15 @@ import { AboutMeComponent } from "./about-me/about-me.component";
         HeaderComponent,
         FrontPageComponent,
         FrontPageFooterComponent,
+
     ],
     providers: [],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        AboutMeComponent
+        AboutMeComponent,
+        SkillsComponent
     ]
 })
 export class AppModule { }

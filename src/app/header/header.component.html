@@ -1,6 +1,6 @@
 <div class="header pad-left-right">
     <div class="header-logo">
-        <a href="#front-page">
+        <a href="#">
         <h1>N<span class="cutted-i cutted-i-top">i</span>kol<p>a</p></h1>
     </a>
     </div>    
@@ -8,7 +8,9 @@
         <a href="#about-me" 
        (click)="setActiveLink('about-me')" 
        [class.active-link]="activeLink === 'about-me'">About me</a>
-        <a href="http://#">Skills</a>
-        <a href="http://#">Portfolio</a>
+        <a href="#skills" 
+        (click)="setActiveLink('skills')" 
+        [class.active-link]="activeLink === 'skills'">Skills</a>
+        <a href="#">Portfolio</a>
     </div>
 </div>
