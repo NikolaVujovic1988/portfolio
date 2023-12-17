@@ -1,14 +1,15 @@
 .skills {
-    height: 100svh;
+    min-height: 80svh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10svh;
     position: relative;
 
     .blur-shape {
         position: absolute;
         left: 0;
-        bottom: -50vh;
+        bottom: -60vh;
     }
 
     .skills-icons {
@@ -73,7 +74,7 @@
                 height: 4px;
                 width: 7%;
                 right: 0;
-                top: 32%;
+                top: 45%;
                 background-color: #4B47FF;
             }
 

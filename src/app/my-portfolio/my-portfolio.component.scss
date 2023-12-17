@@ -1,17 +1,53 @@
 .portfolio-section {
     display: flex;
+    flex-direction: column;
     min-height: 100svh;
     max-width: 100%;
-    justify-content: center;
+    align-items: center;
+    padding-top: 10svh;
 
     .portfolio-headline {
-
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        width: 100svw;
+        max-width: 100%;
 
         h1 {
             color: white;
             font-weight: 700;
             font-size: 90px;
             line-height: 108px;
+            padding-right: 5vw;
+            padding-left: 5vw;
+        }
+
+        .empty-container {
+            width: 20vw;
+            height: 4px;
+        }
+
+        .design-line-left {
+            width: 10vw;
+            height: 4px;
+            background-color: #4B47FF;
+        }
+
+        .design-line-right {
+            width: 40vw;
+            height: 4px;
+            margin-right: -9vw;
+            background-color: #4B47FF;
         }
     }
+
+    span {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19, 2px;
+        color: white;
+    }
+
 }
