@@ -1,0 +1,17 @@
+.portfolio-section {
+    display: flex;
+    min-height: 100svh;
+    max-width: 100%;
+    justify-content: center;
+
+    .portfolio-headline {
+
+
+        h1 {
+            color: white;
+            font-weight: 700;
+            font-size: 90px;
+            line-height: 108px;
+        }
+    }
+}

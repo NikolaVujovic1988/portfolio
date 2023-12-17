@@ -8,6 +8,7 @@ import { FrontPageComponent } from './front-page/front-page.component';
 import { FrontPageFooterComponent } from './front-page-footer/front-page-footer.component';
 import { AboutMeComponent } from "./about-me/about-me.component";
 import { SkillsComponent } from "./skills/skills.component";
+import { MyPortfolioComponent } from "./my-portfolio/my-portfolio.component";
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { SkillsComponent } from "./skills/skills.component";
         BrowserModule,
         AppRoutingModule,
         AboutMeComponent,
-        SkillsComponent
+        SkillsComponent,
+        MyPortfolioComponent
     ]
 })
 export class AppModule { }
