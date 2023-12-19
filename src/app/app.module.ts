@@ -9,6 +9,7 @@ import { FrontPageFooterComponent } from './front-page-footer/front-page-footer.
 import { AboutMeComponent } from "./about-me/about-me.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { MyPortfolioComponent } from "./my-portfolio/my-portfolio.component";
+import { ProjectsComponent } from "./projects/projects.component";
 
 
 @NgModule({
@@ -17,7 +18,6 @@ import { MyPortfolioComponent } from "./my-portfolio/my-portfolio.component";
         HeaderComponent,
         FrontPageComponent,
         FrontPageFooterComponent,
-
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -26,7 +26,8 @@ import { MyPortfolioComponent } from "./my-portfolio/my-portfolio.component";
         AppRoutingModule,
         AboutMeComponent,
         SkillsComponent,
-        MyPortfolioComponent
+        MyPortfolioComponent,
+        ProjectsComponent
     ]
 })
 export class AppModule { }
