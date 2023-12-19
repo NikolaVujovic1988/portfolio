@@ -2,6 +2,15 @@ $purpleBlue: #4B47FF;
 $lightBlue: #00BEE8;
 $white: #ffffff;
 
+@mixin flex-center($flex-direction: row) {
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10vh;
+    flex-direction: $flex-direction;
+  }
+
 
 .all-projects {
     min-height: 90svh;
@@ -9,16 +18,23 @@ $white: #ffffff;
 }
 
 .first-project {
-    height: 65svh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-center;
+}
 
+.second-project {
+    @include flex-center ($flex-direction: row-reverse);
+}
+
+// .project-image {
+//     width: 35%;
+// }
+
+.project-description {
+    width: 35%;
 }
 
 img {
-    height: 50svh;
-    width: 50svw;
+    height: 35svh;
     object-fit: contain;
 
 }
