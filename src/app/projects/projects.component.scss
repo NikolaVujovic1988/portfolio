@@ -25,6 +25,10 @@ $white: #ffffff;
     @include flex-center ($flex-direction: row-reverse);
 }
 
+.third-project {
+    @include flex-center;
+}
+
 // .project-image {
 //     width: 35%;
 // }
