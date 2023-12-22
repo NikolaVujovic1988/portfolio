@@ -8,6 +8,8 @@ $white: #ffffff;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10vh;
+    z-index: 1 !important;
+
     flex-direction: $flex-direction;
   }
 
@@ -15,6 +17,8 @@ $white: #ffffff;
 .all-projects {
     min-height: 90svh;
     max-width: 100%;
+    position: relative;
+    z-index: 1 !important;
 }
 
 .first-project {
@@ -27,6 +31,10 @@ $white: #ffffff;
 
 .third-project {
     @include flex-center;
+}
+
+.forth-project {
+    @include flex-center ($flex-direction: row-reverse);
 }
 
 // .project-image {
@@ -102,5 +110,24 @@ span {
         }
     }
 
+
+}
+
+.dark-shape {
+    position: absolute;
+    top: 40%;
+    left: -20%;
+    object-fit: contain;
+    height: 100vh;
+    z-index: -1;
+}
+
+.light-shape {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    object-fit: contain;
+    height: 100vh;
+    z-index: -1;
 
 }
