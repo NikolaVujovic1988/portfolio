@@ -10,6 +10,7 @@ import { AboutMeComponent } from "./about-me/about-me.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { MyPortfolioComponent } from "./my-portfolio/my-portfolio.component";
 import { ProjectsComponent } from "./projects/projects.component";
+import { ContactComponent } from "./contact/contact.component";
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ProjectsComponent } from "./projects/projects.component";
         AboutMeComponent,
         SkillsComponent,
         MyPortfolioComponent,
-        ProjectsComponent
+        ProjectsComponent,
+        ContactComponent
     ]
 })
 export class AppModule { }

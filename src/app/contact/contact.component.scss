@@ -1,0 +1,23 @@
+$purpleBlue: #4B47FF;
+$lightBlue: #00BEE8;
+$white: #ffffff;
+
+
+.contact-headline {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 90px;
+    }
+
+    .design-line {
+        width: 5vw;
+        margin-right: 5vw;
+        height: 4px;
+        background-color: $purpleBlue;
+    }
+}
