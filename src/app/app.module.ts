@@ -11,6 +11,7 @@ import { SkillsComponent } from "./skills/skills.component";
 import { MyPortfolioComponent } from "./my-portfolio/my-portfolio.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ContactComponent } from "./contact/contact.component";
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ContactComponent } from "./contact/contact.component";
         SkillsComponent,
         MyPortfolioComponent,
         ProjectsComponent,
-        ContactComponent
+        ContactComponent,
+        ReactiveFormsModule
     ]
 })
 export class AppModule { }

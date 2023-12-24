@@ -21,3 +21,106 @@ $white: #ffffff;
         background-color: $purpleBlue;
     }
 }
+
+.subheadline-and-form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+
+    .subheadline-section {
+        width: 40vw;
+        margin-right: 10vw;
+
+
+        h2 {
+            color: $white;
+            font-weight: 700;
+            font-size: 32px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: $white;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        h4 {
+            color: $white;
+            font-weight: 700;
+            font-size: 16px;
+
+        }
+    }
+
+    form {
+        width: 40vw;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        .form-group {
+            margin-bottom: 16px;
+          
+            // label {
+            //   display: block;
+            //   margin-bottom: 5px;
+            // }
+          
+            input, textarea {
+              width: 100%;
+              padding: 10px;
+              margin-top: 5px;
+              gap: 32px;
+
+              border-radius: 10px;
+              border: 1px solid $purpleBlue;
+              background-color: rgba($color: #000000, $alpha: 0);
+              color: white;
+          
+              &:invalid.ng-touched {
+                border-color: red;
+              }
+            }
+
+            textarea {
+                min-height: 200px;
+            }
+
+            ::placeholder {
+                color: $white;
+                font-weight: 300;
+                font-size: 16px;
+                font-family: 'Poppins';
+            }
+          
+            .error-message {
+              color: red;
+              display: none;
+          
+              &.ng-touched.ng-invalid {
+                display: block;
+              }
+            }
+          }
+          
+          .checkbox {
+            input[type="checkbox"] {
+              margin-right: 5px;
+            }
+          }
+          
+          button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          
+            &:hover {
+              background-color: #4cae4c;
+            }
+          }
+          
+    }
+}
