@@ -1,5 +1,11 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,8 +17,6 @@ import { SkillsComponent } from "./skills/skills.component";
 import { MyPortfolioComponent } from "./my-portfolio/my-portfolio.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ContactComponent } from "./contact/contact.component";
-import { ReactiveFormsModule } from '@angular/forms';
-
 
 @NgModule({
     declarations: [
@@ -20,6 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
         HeaderComponent,
         FrontPageComponent,
         FrontPageFooterComponent,
+        ContactComponent,
+
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -27,10 +33,12 @@ import { ReactiveFormsModule } from '@angular/forms';
         BrowserModule,
         AppRoutingModule,
         AboutMeComponent,
+        HttpClientModule,
         SkillsComponent,
         MyPortfolioComponent,
         ProjectsComponent,
-        ContactComponent,
+        CommonModule,
+        FormsModule,
         ReactiveFormsModule
     ]
 })

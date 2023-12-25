@@ -3,17 +3,15 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 14px; 
+  width: 4px; 
 }
 
-/* Stil za trag (track) scrollbar-a */
 ::-webkit-scrollbar-track {
-  background: rgba(20, 29, 47, 0); /* boja pozadine traga */
+  background: rgba(20, 29, 47, 0); 
 }
 
-/* Stil za ručicu (thumb) scrollbar-a */
 ::-webkit-scrollbar-thumb {
-  background: #00BEE8; /* boja ručice */
+  background: #00BEE8; 
 }
 
 body {
