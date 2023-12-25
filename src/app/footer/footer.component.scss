@@ -1,3 +1,5 @@
+@import 'src/app/header/header.component.scss';
+
 $purpleBlue: #4B47FF;
 $lightBlue: #00BEE8;
 $white: #ffffff;
@@ -7,23 +9,93 @@ $white: #ffffff;
 footer {
     position: relative;
     width: 80%;
-    height: 20svh;
-    z-index: 999;
+    height: 30svh;
     border-top: 4px solid $lightBlue;
 
-    // .shape-contact {
-    //     position: absolute;
-    //     top: -30%;
-    //     left: 0;
-    //     z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    //     .shape-img-contact {
-    //         border: none;
-    //         padding: 0;
-    //         border-radius: 0;
-    //         height: 30vh;
-    //         object-fit: contain;
 
-    //     }
-    // }
+    .header-logo {
+        margin-top: 32px;
+
+        .impressum {
+            color: $white;
+            font-weight: 300;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative; 
+        
+            &:hover::after {
+                content: ''; // Necessary for a pseudo-element
+                position: absolute; // Position the pseudo-element
+                bottom: 0; // Align it to the bottom of the container
+                left: 35%; // Center the pseudo-element
+                width: 70%; 
+                height: 2px; 
+                background: $lightBlue; 
+                transform: translateX(-50%); // Center align the pseudo-element
+            }
+        }
+        
+        a {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        h1,
+        p {
+            margin: 0;
+            color: white;
+            font-weight: 700;
+            font-size: 28px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.05em;
+        }
+
+        p {
+            color: #1CDAE6;
+        }
+
+        .cutted-i {
+            background: linear-gradient(0deg, white 65%, transparent 30%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .cutted-i-top {
+            background-color: #4B47FF;
+        }
+    }
+
+    .span-center {
+        font-size: 23px;
+        color: $white;
+        font-weight: 400;
+    }
+
+    .footer-icons {
+        display: flex;
+
+
+        .icons {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            margin-left: 40px;
+
+
+
+            &:hover {
+                // width: 35px;
+                // height: 35px;
+                scale: 1.2;
+                cursor: pointer;
+            }
+        }
+    }
 }
