@@ -17,6 +17,7 @@ import { SkillsComponent } from "./skills/skills.component";
 import { MyPortfolioComponent } from "./my-portfolio/my-portfolio.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ContactComponent } from "./contact/contact.component";
+import { FooterComponent } from "./footer/footer.component";
 
 @NgModule({
     declarations: [
@@ -25,7 +26,6 @@ import { ContactComponent } from "./contact/contact.component";
         FrontPageComponent,
         FrontPageFooterComponent,
         ContactComponent,
-
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -39,7 +39,8 @@ import { ContactComponent } from "./contact/contact.component";
         ProjectsComponent,
         CommonModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        FooterComponent
     ]
 })
 export class AppModule { }

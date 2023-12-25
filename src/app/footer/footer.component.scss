@@ -1,0 +1,29 @@
+$purpleBlue: #4B47FF;
+$lightBlue: #00BEE8;
+$white: #ffffff;
+
+
+
+footer {
+    position: relative;
+    width: 80%;
+    height: 20svh;
+    z-index: 999;
+    border-top: 4px solid $lightBlue;
+
+    // .shape-contact {
+    //     position: absolute;
+    //     top: -30%;
+    //     left: 0;
+    //     z-index: 0;
+
+    //     .shape-img-contact {
+    //         border: none;
+    //         padding: 0;
+    //         border-radius: 0;
+    //         height: 30vh;
+    //         object-fit: contain;
+
+    //     }
+    // }
+}

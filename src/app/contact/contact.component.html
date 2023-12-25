@@ -1,9 +1,13 @@
-<div class="contact-headline">
+<div class="contact-headline" id="contact">
     <div class="design-line"></div>
     <h1 data-aos="zoom-out-up">Contact</h1>
 </div>
 
 <div class="subheadline-and-form pad-left-right">
+    <div class="shape-contact">
+        <img class="shape-img-contact" src="/assets/images/D. blue 3 footer.png">
+    </div>
+
     <div class="subheadline-section" data-aos="fade-right">
         <h2>Got a problem to solve?</h2>
         <h3>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your
@@ -17,7 +21,8 @@
             <input [disabled]="isFormDisabled" type="text" name="name" placeholder="Your name" #nameInput="ngModel"
                 required [(ngModel)]="name" minlength="1" pattern="[a-zA-Z0-9]+(\s[a-zA-Z0-9]+)*\s*"
                 [ngClass]="{'green-border': nameInput.valid && nameInput.dirty, 'red-border': nameInput.invalid && nameInput.dirty}">
-            <img *ngIf="nameInput.invalid && nameInput.dirty" src="assets/images/icons/incorrect.png" class="alert-icon">
+            <img *ngIf="nameInput.invalid && nameInput.dirty" src="assets/images/icons/incorrect.png"
+                class="alert-icon">
             <img *ngIf="nameInput.valid && nameInput.dirty" src="assets/images/icons/correct.png" class="alert-icon">
             <div *ngIf="sendingMessage" class="loading-icon"></div>
         </div>
@@ -26,7 +31,8 @@
             <input [disabled]="isFormDisabled" type="email" name="email" placeholder="Your email"
                 pattern="^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$" #emailInput="ngModel" required [(ngModel)]="email"
                 [ngClass]="{'green-border': emailInput.valid && emailInput.dirty, 'red-border': emailInput.invalid && emailInput.dirty}">
-            <img *ngIf="emailInput.invalid && emailInput.dirty" src="assets/images/icons/incorrect.png" class="alert-icon">
+            <img *ngIf="emailInput.invalid && emailInput.dirty" src="assets/images/icons/incorrect.png"
+                class="alert-icon">
             <img *ngIf="emailInput.valid && emailInput.dirty" src="assets/images/icons/correct.png" class="alert-icon">
             <div *ngIf="sendingMessage" class="loading-icon"></div>
         </div>
@@ -37,12 +43,20 @@
                 [ngClass]="{'green-border': messageInput.valid && messageInput.touched, 'red-border': messageInput.invalid && messageInput.dirty}"></textarea>
             <img *ngIf="messageInput.invalid && messageInput.dirty" src="assets/images/icons/incorrect.png"
                 class="alert-icon">
-            <img *ngIf="messageInput.valid && messageInput.dirty" src="assets/images/icons/correct.png" class="alert-icon">
+            <img *ngIf="messageInput.valid && messageInput.dirty" src="assets/images/icons/correct.png"
+                class="alert-icon">
             <div *ngIf="sendingMessage" class="loading-icon"></div>
             <img src="assets/images/icons/resize.png" class="resize-icon"
                 [ngClass]="{'icon-pos-adjust': messageInput.invalid && messageInput.dirty}">
         </div>
-        <span *ngIf="messageInput.invalid && messageInput.dirty || message?.trim() === '' && message.length > 3">Your message is empty</span>
-        <button type="submit" #sendButton>Send message</button>
+        <span *ngIf="messageInput.invalid && messageInput.dirty || message?.trim() === '' && message.length > 3">Your
+            message is empty</span>
+        <button type="submit" #sendButton>Send message :) </button>
+
+        <div class="scroll-up pad-left-right">
+            <a href="#">
+                <img src="/assets/images/arrow-up.png" href="#">
+            </a>
+        </div>
     </form>
 </div>

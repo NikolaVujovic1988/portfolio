@@ -26,6 +26,25 @@ $white: #ffffff;
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .shape-contact {
+        position: absolute;
+        bottom: -30vh;
+        left: 0;
+        
+
+        .shape-img-contact {
+            border: none;
+            padding: 0;
+            border-radius: 0;
+            height: 80vh;
+            object-fit: contain;
+
+        }
+    }
+
 
     .subheadline-section {
         width: 40vw;
@@ -52,120 +71,7 @@ $white: #ffffff;
 
         }
     }
-
-    form {
-        width: 40vw;
-        margin-left: 20px;
-        margin-right: 20px;
-
-        .form-group {
-            margin-bottom: 16px;
-
-            // label {
-            //   display: block;
-            //   margin-bottom: 5px;
-            // }
-
-            input,
-            textarea {
-                width: 100%;
-                padding: 10px;
-                margin-top: 5px;
-                gap: 32px;
-
-                border-radius: 10px;
-                border: 1px solid $purpleBlue;
-                background-color: rgba($color: #000000, $alpha: 0);
-                color: white;
-
-                &:focus {
-                    border: 1px solid $lightBlue;
-                }
-
-                &:invalid.ng-touched {
-                    border-color: red;
-                }
-
-                .error-message {
-                    color: red;
-
-                  }
-            }
-
-            textarea {
-                min-height: 200px;
-            }
-
-            ::placeholder {
-                color: $white;
-                font-weight: 300;
-                font-size: 16px;
-                font-family: 'Poppins';
-            }
-
-            .error-message {
-                color: red;
-                display: none;
-
-                &.ng-touched.ng-invalid {
-                    display: block;
-                }
-            }
-        }
-
-        .checkbox {
-            position: relative;
-            padding-left: 25px; // Adjust as needed
-            cursor: pointer;
-
-            input[type="checkbox"] {
-                opacity: 0;
-                position: absolute;
-                cursor: pointer;
-            }
-
-            .checkmark {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 15px;
-                width: 15px;
-                background-color: rgba($color: #000000, $alpha: 0);
-                border: 1px solid $lightBlue;
-            }
-
-            input:checked~.checkmark {
-                background-color: $purpleBlue;
-                // Add other styles for checked state
-            }
-
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            margin-bottom: 32px;
-            margin-top: -16px;
-            color: $white;
-            font-weight: 300;
-            font-size: 14px;
-
-        }
-
-        button {
-            background-color: #5cb85c;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-
-            &:hover {
-                background-color: #4cae4c;
-            }
-        }
-
-    }
 }
-
 
 .contact-headline-container {
     display: flex;
@@ -183,37 +89,18 @@ $white: #ffffff;
     }
 }
 
-.design-line-blue {
-    height: 4px;
-    width: 50px;
-    background-color: #4B47FF;
+button {
+    background-color: #5cb85c;
+    color: $white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 23px;
+    font-weight: 300;
+    cursor: pointer;
 
-    @media (max-width: 1070px) {
-        width: 30px;
-    }
-
-    @media (max-width: 460px) {
-        width: 10px;
-    }
-}
-
-.contact-text-container-left {
-    width: calc(50% - 200px);
-
-    @media (max-width: 1070px) {
-        width: unset;
-        padding-bottom: 45px;
-    }
-
-    h4 {
-        font-size: 32px;
-        font-weight: 700;
-        margin-top: 0;
-        margin-bottom: 45px;
-
-        @media (max-width: 460px) {
-            font-size: 26px;
-        }
+    &:hover {
+        background-color: #4cae4c;
     }
 }
 
@@ -241,9 +128,9 @@ textarea {
     height: 50px;
     width: 100%;
     background-color: transparent;
-    border: 1px solid #4B47FF;
+    border: 1px solid $purpleBlue;
     border-radius: 10px;
-    color: white;
+    color: $white;
     padding-left: 25px;
     cursor: pointer;
     font-family: 'Poppins', 'sans-serif';
@@ -252,16 +139,16 @@ textarea {
     margin-bottom: 30px;
 
     &:hover {
-        border: 1px solid #00BEE8;
+        border: 1px solid $lightBlue;
     }
 
     &::placeholder {
-        color: white;
+        color: $white;
     }
 
     &:focus-visible {
         border: none !important;
-        outline: 1px solid #00BEE8 !important;
+        outline: 1px solid $lightBlue !important;
     }
 }
 
@@ -270,7 +157,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: $white;
 }
 
 .textarea-box,
@@ -330,15 +217,20 @@ textarea {
     text-align: center;
 }
 
-.arrow {
-    margin-top: 90px;
-    margin-bottom: 90px;
-    margin-right: 100px;
-    cursor: pointer;
+.scroll-up {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
-    @media (max-width: 1070px) {
-        margin: 50px;
+
+    img {
+        border-radius: 100%;
+        border: 2px solid $white;
+        padding: 10px;
     }
+
 }
 
 .green-border {

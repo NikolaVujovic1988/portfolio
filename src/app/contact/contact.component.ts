@@ -64,7 +64,7 @@ export class ContactComponent {
 
     try {
       // const response = 
-      await this.http.post('https://timvoigt.ch/sendmail.php', formData, { responseType: 'text' }).toPromise();
+      await this.http.post('https://nikola-vujovic.de/sendmail.php', formData, { responseType: 'text' }).toPromise();
 
       // if (response === 'success') {
       //   // console.log('Email sent successfully!');
