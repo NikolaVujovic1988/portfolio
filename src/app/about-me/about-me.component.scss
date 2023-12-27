@@ -1,9 +1,16 @@
 .about-me-section {
-    height: 100svh;
+    // min-height: 100svh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
+
+    background-image: url('/assets/images/about-me-blur.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: top;
+
 
     .about-me-blur {
         position: absolute;
@@ -18,7 +25,7 @@
 
     h1 {
         font-weight: 700;
-        font-size: 90px;
+        font-size: 80px;
         line-height: 108px;
     }
 
@@ -80,4 +87,29 @@
         object-fit: contain;
     }
 
+}
+
+@media screen and (max-width: 999px) {
+    .about-me-section {
+        align-items: baseline;
+    }
+
+    .about-me-text-section {
+
+        width: 100%;
+
+        h1 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+        span {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    .about-me-image-section {
+        display: none;
+    }
 }
