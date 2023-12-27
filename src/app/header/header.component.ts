@@ -1,15 +1,25 @@
 import { Component } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  animations: [
+    trigger('imageTransition', [
+      state('visible', style({ opacity: 1 })),
+      state('hidden', style({ opacity: 0 })),
+      transition('hidden => visible', animate('500ms ease-in-out')),
+      transition('visible => hidden', animate('500ms ease-in-out'))
+    ])
+  ]
 })
+
 export class HeaderComponent {
   activeLink: string = '';
   isFullScreenDivVisible: boolean = false;
   burgerImageSrc: string = '/assets/images/icons/Property 1=burger.png';
-  private burgerImages: string[] = [
+  public burgerImages: string[] = [
     '/assets/images/icons/Property 1=burger.png',
     '/assets/images/icons/Property 1=Transition.png',
     '/assets/images/icons/Property 1=close medium.png',
@@ -44,7 +54,7 @@ export class HeaderComponent {
       } else {
         clearInterval(this.animationInterval); // Zaustavlja animaciju na poslednjoj slici
       }
-    }, 400);
+    }, 10);
   }
 
   private stopBurgerAnimation(): void {
