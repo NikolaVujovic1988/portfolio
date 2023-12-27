@@ -110,6 +110,14 @@ span {
         }
     }
 
+    h2, h3, span, 
+    .projects-btns {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+
 
 }
 
