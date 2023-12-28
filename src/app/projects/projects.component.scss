@@ -183,11 +183,23 @@ span {
     .dark-shape {
         left: -35%;
     }
+
+    img {
+        height: 25svh;
+    }
+
 }
 
 @media screen and (max-width: 599px) {
     .dark-shape {
-        left: -50%;
+        left: -30%;
+        width: 80%;
+
+    }
+
+    .light-shape {
+        width: 40%;
+        right: 0;
     }
 
     .project-description {
@@ -197,7 +209,7 @@ span {
     }   
 
     img {
-        height: 25svh;
+        height: 20svh;
     }
     
 }

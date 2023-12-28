@@ -248,6 +248,14 @@ textarea {
     }
 }
 
+@media (max-width: 1400px) {
+    h1 {
+        font-size: 60px !important;
+
+    }
+}
+
+
 @media (max-width: 999px) {
     .subheadline-and-form {
         flex-direction: column;
