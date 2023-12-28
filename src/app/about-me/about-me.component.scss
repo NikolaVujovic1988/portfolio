@@ -1,5 +1,5 @@
 .about-me-section {
-    // min-height: 100svh;
+    min-height: 100svh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -22,6 +22,9 @@
 .about-me-text-section {
     color: white;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 
     h1 {
         font-weight: 700;
@@ -89,23 +92,31 @@
 
 }
 
+@media (max-width: 1400px) {
+    h1 {
+        font-size: 60px !important;
+
+    }
+}
+
 @media screen and (max-width: 999px) {
     .about-me-section {
         align-items: baseline;
+        padding-top: 10svh;
     }
 
     .about-me-text-section {
 
         width: 100%;
 
-        h1 {
-            font-size: 60px;
-            line-height: 60px;
-        }
 
         span {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 19px;
+        }
+
+        p {
+            font-size: 16px;
         }
     }
 

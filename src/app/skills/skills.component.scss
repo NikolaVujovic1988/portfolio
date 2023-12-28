@@ -12,48 +12,18 @@
         bottom: -60vh;
     }
 
-    // .skills-icons {
-    //     display: flex;
-    //     justify-content: flex-start;
-    //     align-items: center;
-    //     flex-wrap: wrap;
-    //     width: 60%;
-    //     z-index: 1;
-
-    //     .icon {
-    //         display: flex;
-    //         justify-content: center;
-    //         flex-direction: column;
-    //         align-items: center;
-    //         padding-right: 6%;
-    //         padding-top: 3%; 
-    //         padding-bottom: 3%;
-    //     }
-
-    //     img {
-    //         width: 8vw;
-    //         height: 8vh;
-    //         object-fit: contain;
-
-    //         &:hover {
-    //             scale: 1.1;
-    //         }
-    //     }
-
-    // }
 
     .skills-icons {
+        z-index: 1;
         display: grid;
-        grid-gap: 10px; // Adjust this for spacing between icons
-        padding: 10px; // Optional, adjust as needed
+        grid-gap: 15px; 
+        padding: 15px; 
 
-        @media (min-width: 1000px) {
-            // For screens wider than 999px, 4 items per row
+        @media (min-width: 600px) {
             grid-template-columns: repeat(4, 1fr);
         }
 
-        @media (max-width: 999px) {
-            // For screens smaller than 1000px, 3 items per row
+        @media (max-width: 599px) {
             grid-template-columns: repeat(3, 1fr);
         }
     }
@@ -65,8 +35,8 @@
         text-align: center;
 
         img {
-            width: 8vw;
-            height: 8vh;
+            width: 7vw;
+            height: 7vh;
             object-fit: contain;
 
             &:hover {
@@ -103,6 +73,7 @@
                 margin: 0;
             }
 
+
             .design-line-container {
                 position: absolute;
                 height: 4px;
@@ -119,6 +90,7 @@
                 line-height: 19.2px;
                 color: white;
                 margin-bottom: 10%;
+                width: auto;
             }
         }
 
@@ -143,6 +115,23 @@
     }
 }
 
+
+@media (max-width: 1400px) {
+    h1 {
+        font-size: 60px !important;
+
+    }
+
+    .design-line-container {
+        top: 22svh !important;
+    }
+
+
+    h3 {
+        width: 50% !important;
+    }
+}
+
 @media screen and (max-width: 999px) {
     .skills {
         flex-direction: column-reverse;
@@ -156,14 +145,21 @@
         top: 17svh !important;
     }
 
-    h1 {
-        font-size: 60px !important;
-        line-height: 60px;
-    }
-
     h3 {
         font-size: 16px !important;
         line-height: 19px;
     }
 
+    a {
+        display: none !important;
+    }
+
+}
+
+
+
+@media (max-width: 800px) {
+    h3 {
+        width: 80% !important;
+    }
 }

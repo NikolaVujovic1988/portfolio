@@ -23,20 +23,20 @@ footer {
             font-weight: 300;
             font-size: 16px;
             cursor: pointer;
-            position: relative; 
-        
+            position: relative;
+
             &:hover::after {
                 content: ''; // Necessary for a pseudo-element
                 position: absolute; // Position the pseudo-element
                 bottom: 0; // Align it to the bottom of the container
                 left: 35%; // Center the pseudo-element
-                width: 70%; 
-                height: 2px; 
-                background: $lightBlue; 
+                width: 70%;
+                height: 2px;
+                background: $lightBlue;
                 transform: translateX(-50%); // Center align the pseudo-element
             }
         }
-        
+
         a {
             cursor: pointer;
             text-decoration: none;
@@ -95,5 +95,19 @@ footer {
                 cursor: pointer;
             }
         }
+    }
+}
+
+@media screen and (max-width: 999px) {
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .impressum {
+        left: 7px;
+        // right: 0;
+        bottom: 0;
     }
 }

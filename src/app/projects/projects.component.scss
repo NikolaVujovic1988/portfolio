@@ -16,7 +16,8 @@ $white: #ffffff;
 
 .all-projects {
     min-height: 90svh;
-    max-width: 100%;
+    width: 100svw;
+    max-width: 80%;
     position: relative;
     z-index: 1 !important;
 }
@@ -37,18 +38,16 @@ $white: #ffffff;
     @include flex-center ($flex-direction: row-reverse);
 }
 
-// .project-image {
-//     width: 35%;
-// }
-
 .project-description {
     width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 img {
     height: 35svh;
     object-fit: contain;
-
 }
 
 h2 {
@@ -76,9 +75,9 @@ span {
 
 .projects-btns {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    margin: 16px;
+    margin-top: 16px;
 
     button {
         color: $white;
@@ -88,7 +87,7 @@ span {
         border-radius: 10px;
         border: none;
         font-weight: 300;
-        font-size: 23px;
+        font-size: 21px;
         letter-spacing: 1px;
         cursor: pointer;
     }
@@ -144,6 +143,7 @@ span {
 
     .first-project {
         flex-direction: column;
+        margin-top: 32px;
     }
     
     .second-project {
@@ -164,16 +164,40 @@ span {
 
     .project-description {
         width: 430px;
+        margin-top: 32px;
     }
 
-    h2, h3, span, 
-    .projects-btns {
+    h2, h3, span {
         display: flex;
         justify-content: center;
-        margin-top: 5px;
     }
     
-    button {
-        margin: 10px;
+    .projects-btns {
+        justify-content: space-around;
     }
+
+    span {
+        font-size: 16px;
+    }
+
+    .dark-shape {
+        left: -35%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .dark-shape {
+        left: -50%;
+    }
+
+    .project-description {
+        width: 100%;
+        display: flex;
+        text-align: center;
+    }   
+
+    img {
+        height: 25svh;
+    }
+    
 }
