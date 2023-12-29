@@ -35,7 +35,7 @@
         justify-content: flex-start;
         align-items: flex-end;
         flex-direction: column;
-        width: 80%;
+        // width: 80%;
         z-index: 1;
 
         .introdution {
@@ -50,7 +50,7 @@
         }
 
         .button {
-            margin-top: 10vh;
+            margin-top: 5vh;
             z-index: 999;
 
 
@@ -81,22 +81,25 @@
             display: inline-block;
         }
 
-        h2 {
-            color: white;
-            margin: 0;
-            font-weight: 700;
-            font-size: 3.85rem;
-            ;
-            margin-bottom: 0;
-            letter-spacing: 0.07em;
-        }
+        .headlines {
 
-        h3 {
-            color: #4B47FF;
-            margin-top: 0;
-            margin-bottom: 0;
-            font-weight: 400;
-            font-size: 3.25rem;
+            h2 {
+                color: white;
+                margin: 0;
+                font-weight: 700;
+                font-size: 3.85rem;
+                ;
+                margin-bottom: 0;
+                letter-spacing: 0.07em;
+            }
+
+            h3 {
+                color: #4B47FF;
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: 400;
+                font-size: 3.25rem;
+            }
         }
     }
 
@@ -222,7 +225,7 @@
 
     .front-page-headline {
         .button {
-            margin-top: 10vh;
+            margin-top: 5vh;
 
             button {
                 padding: 15px 30px;
@@ -241,16 +244,20 @@
 
         }
 
-        h2 {
+        .headlines {
 
-            font-size: 70px;
-            letter-spacing: 0.08em;
-        }
+            h2 {
 
-        h3 {
-            margin-bottom: 0;
-            font-weight: 400;
-            font-size: 60px;
+                font-size: 70px;
+                letter-spacing: 0.08em;
+            }
+
+            h3 {
+                margin-bottom: 0;
+                font-weight: 400;
+                font-size: 60px;
+            }
+
         }
     }
 }
@@ -283,34 +290,38 @@
             }
         }
 
+        .introdution {
+            margin-left: -2.375rem;
 
-        .front-page-headline {
-            margin-right: 0;
-            align-items: center;
-            width: 100%;
+            .front-page-headline {
+                margin-right: 0;
+                align-items: center;
+                // width: auto !important;
 
-            .button {
-                margin-top: 2rem;
+                .button {
+                    margin-top: 2rem;
 
-                button {
-                    padding: 2rem, 4rem;
-                    font-size: 2rem;
+                    button {
+                        padding: 2rem, 4rem;
+                        font-size: 2rem;
+                    }
+                }
+
+                span {
+                    font-size: 4.75rem;
+                }
+
+                .headlines {
+
+                    h2 {
+                        font-size: 4.85rem;
+                    }
+
+                    h3 {
+                        font-size: 4.15rem;
+                    }
                 }
             }
-
-            span {
-                font-size: 4.75rem;
-            }
-    
-            h2 {
-                font-size: 4.85rem;
-            }
-    
-            h3 {
-                font-size: 4.15rem;
-            }
-    
-
         }
 
 
@@ -344,26 +355,32 @@
         font-size: 4.25rem !important;
     }
 
-    h2 {
-        font-size: 4.35rem !important;
-    }
+    .headlines {
 
-    h3 {
-        font-size: 3.65rem !important;
+        h2 {
+            font-size: 4.35rem !important;
+        }
+
+        h3 {
+            font-size: 3.65rem !important;
+        }
     }
 }
 
-    @media screen and (max-width: 580px) {
-        span {
-            font-size: 3.75rem !important;
-        }
-    
+@media screen and (max-width: 585px) {
+    span {
+        font-size: 3.75rem !important;
+    }
+
+    .headlines {
+
         h2 {
             font-size: 3.85rem !important;
         }
-    
+
         h3 {
             font-size: 3.15rem !important;
         }
 
+    }
 }
