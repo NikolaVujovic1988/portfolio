@@ -85,7 +85,8 @@
             color: white;
             margin: 0;
             font-weight: 700;
-            font-size: 3.85rem;;
+            font-size: 3.85rem;
+            ;
             margin-bottom: 0;
             letter-spacing: 0.07em;
         }
@@ -102,11 +103,6 @@
 }
 
 .footer-shape {
-    // position: absolute;
-    // left: 0;
-    // right: 0;
-    // top: 40svh;
-
 
     position: absolute;
     bottom: 0;
@@ -266,7 +262,7 @@
         justify-content: center;
         align-items: center;
         background-position-x: center;
-        min-height: 85svh;
+        min-height: 80svh;
 
 
         .footer-shape {
@@ -284,8 +280,6 @@
                 object-fit: contain;
                 width: 100vw;
                 max-width: 100%;
-                height: 60vh;
-
             }
         }
 
@@ -297,7 +291,25 @@
 
             .button {
                 margin-top: 2rem;
+
+                button {
+                    padding: 2rem, 4rem;
+                    font-size: 2rem;
+                }
             }
+
+            span {
+                font-size: 4.75rem;
+            }
+    
+            h2 {
+                font-size: 4.85rem;
+            }
+    
+            h3 {
+                font-size: 4.15rem;
+            }
+    
 
         }
 
@@ -306,19 +318,52 @@
 
     .footer-icons {
         margin-top: 0 !important;
+        //     align-items: flex-start !important;
 
 
+        // .design-line {
+        //     margin-top: 14px !important;
+        // }
 
-    .icons-container {
-        padding-left: 0 !important;
-        width: 100%;
-        justify-content: center !important;
+        .icons-container {
+            padding-left: 0 !important;
+            width: 100%;
+            justify-content: center !important;
+            align-items: flex-start !important;
 
-        .footer-contact {
-            display: none;
+
+            .footer-contact {
+                display: none;
+            }
         }
     }
 }
 
+@media screen and (max-width: 650px) {
+    span {
+        font-size: 4.25rem !important;
+    }
+
+    h2 {
+        font-size: 4.35rem !important;
+    }
+
+    h3 {
+        font-size: 3.65rem !important;
+    }
+}
+
+    @media screen and (max-width: 580px) {
+        span {
+            font-size: 3.75rem !important;
+        }
+    
+        h2 {
+            font-size: 3.85rem !important;
+        }
+    
+        h3 {
+            font-size: 3.15rem !important;
+        }
 
 }
