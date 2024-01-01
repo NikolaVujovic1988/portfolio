@@ -80,6 +80,18 @@
 
   }
 
+  @media screen and (min-width: 1600px) {
+    .header-navbar {
+      a {
+        font-size: calc(23px + (100vw - 1600px) * 0.005);
+      }
+    }
+    h1,
+    p {
+      font-size: calc(28px + (100vw - 1600px) * 0.005);
+    }  
+  }
+
   @keyframes slideFromLeft {
     from {
       transform: translateX(-100%);

@@ -244,22 +244,21 @@
             }
 
             span {
-                font-size: 64px;
-
+                font-size: calc(64px + (100svw - 1600px) * 0.005);
             }
 
             .headlines {
 
                 h2 {
 
-                    font-size: 70px;
+                    font-size: calc(70px + (100vw - 1600px) * 0.005);
                     letter-spacing: 0.08em;
                 }
 
                 h3 {
                     margin-bottom: 0;
                     font-weight: 400;
-                    font-size: 60px;
+                    font-size: calc(60px + (100vw - 1600px) * 0.005);
                 }
 
             }
