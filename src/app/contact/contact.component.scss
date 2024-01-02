@@ -201,15 +201,15 @@ textarea {
 }
 
 .success-banner {
-    position: fixed;
+    position: absolute;
     z-index: 999;
-    top: 30px;
+    top: 60%;
     left: 0;
     right: 0;
     font-size: 21px;
     font-weight: 300;
     filter: brightness(1.2);
-    color: #70E61C;
+    color: white;
     text-align: center;
 }
 

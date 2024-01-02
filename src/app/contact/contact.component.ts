@@ -63,14 +63,7 @@ export class ContactComponent {
     this.sendingMessage = true;
 
     try {
-      // const response = 
-      await this.http.post('https://nikola-vujovic.de/sendmail.php', formData, { responseType: 'text' }).toPromise();
-
-      // if (response === 'success') {
-      //   // console.log('Email sent successfully!');
-      // } else {
-      //   // console.error('Failed to send email.');
-      // }
+      await this.http.post('https://nikola-vujovic.de/send_mail.php', formData, { responseType: 'text' }).toPromise();
 
       this.showSuccessBanner();
       this.sendingMessage = false;
