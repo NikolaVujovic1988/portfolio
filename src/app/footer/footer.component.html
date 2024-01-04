@@ -1,10 +1,14 @@
+<app-impressum-popup [display]="showImpressumPopup"></app-impressum-popup>
+
 <footer class="pad-left-right">
     <div class="header-logo">
         <a href="#">
-            <h1>N<span class="cutted-i cutted-i-top">i</span>kol<p>a</p></h1>
+            <h1>N<span class="cutted-i cutted-i-top">i</span>kol<p>a</p>
+            </h1>
         </a>
-        <span class="impressum">Impressum</span>
-    </div> 
+        <app-impressum-popup [display]="showImpressumPopup" (close)="showImpressumPopup = false"></app-impressum-popup>
+        <span class="impressum" (click)="showImpressumPopup = true">Impressum</span>
+    </div>
     <span class="span-center">© Nikola Vujovic 2023</span>
     <div class="footer-icons">
         <a href="https://github.com/NikolaVujovic1988" target="_blank" class="icon-link">

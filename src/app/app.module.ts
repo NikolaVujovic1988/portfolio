@@ -19,6 +19,7 @@ import { MyPortfolioComponent } from "./my-portfolio/my-portfolio.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ContactComponent } from "./contact/contact.component";
 import { FooterComponent } from "./footer/footer.component";
+import { ImpressumPopupComponent } from './impressum-popup/impressum-popup.component';
 
 @NgModule({
     declarations: [
@@ -43,6 +44,7 @@ import { FooterComponent } from "./footer/footer.component";
         BrowserAnimationsModule,
         ReactiveFormsModule,
         FooterComponent
+
     ]
 })
 export class AppModule { }

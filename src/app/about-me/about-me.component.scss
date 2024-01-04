@@ -34,21 +34,29 @@
 
     span {
         font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 18px;
     }
 
     @media screen and (min-width: 1600px) {
         .about-me-text-section {
             width: 40%;
-        h1 {
-            font-size: calc(80px + (100vw - 1600px) * 0.005);
+
+            h1 {
+                font-size: calc(80px + (100vw - 1600px) * 0.005);
+            }
+
+            span {
+                font-size: calc(20px + (100vw - 1600px) * 0.005);
+            }
+
+            p {
+                font-size: calc(18px + (100vw - 1600px) * 0.005);
+            }
         }
-        
-        span {
-          font-size: calc(16px + (100vw - 1600px) * 0.005);
-        }  
-      }
     }
 
     .bulb-section {
@@ -125,11 +133,13 @@
 
         span {
             font-size: 18px;
-            line-height: 19px;
+            // line-height: 19px;
         }
 
         p {
             font-size: 16px;
+            // line-height: 19px;
+
         }
     }
 

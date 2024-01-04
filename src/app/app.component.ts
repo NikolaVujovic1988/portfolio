@@ -12,4 +12,5 @@ export class AppComponent  {
   // ngOnInit() {
   //   AOS.init();
   // }
+  showImpressumPopup = false;
 }
