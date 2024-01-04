@@ -15,10 +15,10 @@
         <h4>Need a Frontend developer? Contact me!</h4>
     </div>
 
-    <form data-aos="fade-left" method="POST" (submit)="sendMail(myForm)" #myForm="ngForm" ngNativeValidate
+    <form method="POST" (submit)="sendMail(myForm)" #myForm="ngForm" ngNativeValidate
         class="pr-standard-desktop pr-standard-mobile pl-standard-mobile pr-standard-small pl-standard-small">
         <div class="input-box">
-            <input [disabled]="isFormDisabled" type="text" name="name" placeholder="Your name" #nameInput="ngModel"
+            <input data-aos="flip-up" data-aos-duration="2000" [disabled]="isFormDisabled" type="text" name="name" placeholder="Your name" #nameInput="ngModel"
                 required [(ngModel)]="name" minlength="1" pattern="[a-zA-Z0-9]+(\s[a-zA-Z0-9]+)*\s*"
                 [ngClass]="{'green-border': nameInput.valid && nameInput.dirty, 'red-border': nameInput.invalid && nameInput.dirty}">
             <img *ngIf="nameInput.invalid && nameInput.dirty" src="assets/images/icons/incorrect.png"
@@ -28,7 +28,7 @@
         </div>
         <span *ngIf="nameInput.invalid && nameInput.dirty">Your name is required</span>
         <div class="input-box">
-            <input [disabled]="isFormDisabled" type="email" name="email" placeholder="Your email"
+            <input data-aos="flip-up" data-aos-duration="2000" [disabled]="isFormDisabled" type="email" name="email" placeholder="Your email"
                 pattern="^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$" #emailInput="ngModel" required [(ngModel)]="email"
                 [ngClass]="{'green-border': emailInput.valid && emailInput.dirty, 'red-border': emailInput.invalid && emailInput.dirty}">
             <img *ngIf="emailInput.invalid && emailInput.dirty" src="assets/images/icons/incorrect.png"
@@ -38,7 +38,7 @@
         </div>
         <span *ngIf="emailInput.invalid && emailInput.dirty">A valid email is required</span>
         <div class="textarea-box">
-            <textarea [disabled]="isFormDisabled" type="text" name="message" placeholder="Your message"
+            <textarea data-aos="flip-up" data-aos-duration="2000" [disabled]="isFormDisabled" type="text" name="message" placeholder="Your message"
                 #messageInput="ngModel" required [(ngModel)]="message" pattern="[a-zA-Z0-9]+(\s[a-zA-Z0-9]+)*\s*"
                 [ngClass]="{'green-border': messageInput.valid && messageInput.touched, 'red-border': messageInput.invalid && messageInput.dirty}"></textarea>
             <img *ngIf="messageInput.invalid && messageInput.dirty" src="assets/images/icons/incorrect.png"
@@ -51,7 +51,7 @@
         </div>
         <span *ngIf="messageInput.invalid && messageInput.dirty || message?.trim() === '' && message.length > 3">Your
             message is empty</span>
-        <button type="submit" #sendButton>Send message :) </button>
+        <button data-aos="flip-up" data-aos-duration="2000" type="submit" #sendButton>Send message :) </button>
 
         <div class="scroll-up pad-left-right">
             <a href="#">
