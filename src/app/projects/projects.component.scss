@@ -75,7 +75,7 @@ span {
 
 .projects-btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 16px;
 
@@ -90,6 +90,7 @@ span {
         font-size: 21px;
         letter-spacing: 1px;
         cursor: pointer;
+        margin-right: 2vw;
     }
 
     .project-link {
