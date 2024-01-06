@@ -388,11 +388,18 @@
 @media screen and (max-width: 525px) {
     .front-page {
         background-size: cover;
-        min-height: 75svh !important;
+        min-height: 70svh !important;
     }
 
     .front-page-headline {
         margin-top: 10%;
     }
+}
 
+@media screen and (max-width: 376px) {
+    .front-page {
+        .frontpage-image {
+            height: 470px;
+        }
+    }
 }
