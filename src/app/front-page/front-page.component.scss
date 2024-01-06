@@ -367,6 +367,7 @@
 }
 
 @media screen and (max-width: 585px) {
+
     span {
         font-size: 3.75rem !important;
     }
@@ -382,4 +383,16 @@
         }
 
     }
+}
+
+@media screen and (max-width: 525px) {
+    .front-page {
+        background-size: cover;
+        min-height: 75svh !important;
+    }
+
+    .front-page-headline {
+        margin-top: 10%;
+    }
+
 }
