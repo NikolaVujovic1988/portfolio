@@ -52,7 +52,7 @@ export class HeaderComponent {
       if (imageIndex < this.burgerImages.length - 1) {
         imageIndex++;
       } else {
-        clearInterval(this.animationInterval); // Zaustavlja animaciju na poslednjoj slici
+        clearInterval(this.animationInterval); 
       }
     }, 10);
   }

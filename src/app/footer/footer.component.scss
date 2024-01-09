@@ -111,3 +111,9 @@ footer {
         bottom: 0;
     }
 }
+
+@media screen and (max-height: 999px) {
+    .header-logo {
+        margin-top: 0 !important;
+    }
+}

@@ -27,6 +27,11 @@ export class ContactComponent {
   isFormDisabled: boolean = false;
   sendingMessage: boolean = false;
   messageArrived: boolean = false;
+  isChecked: boolean = false;
+  isSubmitted: boolean = false;
+  showPopup: boolean = false;
+
+
 
   @ViewChild('sendButton', { static: false }) sendButton!: ElementRef;
 
@@ -36,6 +41,10 @@ export class ContactComponent {
   constructor(private http: HttpClient) { }
 
   async sendMail(form: NgForm) {
+    this.isSubmitted = true;
+    if (!this.isChecked) {
+      return; 
+    }
     this.disableForm();
     let formData = new FormData();
     this.getFormInformation(formData);
@@ -49,6 +58,11 @@ export class ContactComponent {
     let sendButton = this.sendButton.nativeElement;
     this.isFormDisabled = true;
     sendButton.disabled = true;
+    this.isChecked = false;
+  }
+
+  toggleCheckbox() {
+    this.isChecked = !this.isChecked;
   }
 
 
@@ -95,6 +109,14 @@ export class ContactComponent {
 
   scrollTop() {
     window.scroll({ top: 0, left: 0 });
+  }
+
+  showPrivacyPolicyPopup() {
+    this.showPopup = true;
+  }
+
+  closePrivacyPolicyPopup() {
+    this.showPopup = false;
   }
 
 

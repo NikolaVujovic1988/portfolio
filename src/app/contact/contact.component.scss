@@ -33,7 +33,7 @@ $white: #ffffff;
         position: absolute;
         bottom: -30vh;
         left: 0;
-        
+
 
         .shape-img-contact {
             border: none;
@@ -79,6 +79,7 @@ $white: #ffffff;
     gap: 45px;
     margin-bottom: 70px;
 
+
     @media (max-width: 1070px) {
         gap: 20px;
     }
@@ -110,6 +111,33 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    .check-box {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 32px;
+        z-index: 9999;
+
+        .checkbox-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            img {
+                cursor: pointer;
+                margin-right: 10px;
+            }
+
+            p {
+                color: $white;
+                font-size: 14px;
+            }
+        }
+    }
 
     span {
         width: 100%;
@@ -117,6 +145,33 @@ form {
         color: #E61C40;
         margin-bottom: 18px;
     }
+
+    .privacy-policy-link {
+        color: $purpleBlue;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    .privacy-policy-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .popup-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    }
+    
 }
 
 input,
@@ -169,11 +224,12 @@ textarea {
     height: 200px !important;
     padding-top: 10px;
     resize: none;
+    margin-bottom: 0 !important;
 }
 
 .resize-icon {
     position: absolute;
-    bottom: 35px;
+    bottom: 5px;
     right: 5px;
 }
 
@@ -284,4 +340,13 @@ textarea {
             left: -40%;
         }
     }
+}
+
+@media screen and (min-width: 2500px) {
+    .shape-contact {
+        .shape-img-contact {
+            height: 60vh !important;
+        }
+    }
+
 }

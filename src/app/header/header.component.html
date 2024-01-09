@@ -11,6 +11,8 @@
         <a href="#skills" (click)="setActiveLink('skills')" [class.active-link]="activeLink === 'skills'">Skills</a>
         <a href="#my-portfolio" (click)="setActiveLink('my-portfolio')"
             [class.active-link]="activeLink === 'my-portfolio'">Portfolio</a>
+        <a href="#contact" (click)="setActiveLink('contact')"
+            [class.active-link]="activeLink === 'contact'">Contact</a>
         <img [@imageTransition]="burgerImageSrc === image ? 'visible' : 'hidden'" *ngFor="let image of burgerImages"
             [src]="image" (click)="toggleFullScreenDiv()">
     </div>
