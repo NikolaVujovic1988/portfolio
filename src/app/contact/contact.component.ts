@@ -50,6 +50,7 @@ export class ContactComponent {
     this.getFormInformation(formData);
     await this.sendData(formData);
     form.resetForm();
+    this.isSubmitted = false;
     this.enableForm();
   }
 
