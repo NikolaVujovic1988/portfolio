@@ -43,7 +43,7 @@ export class ContactComponent {
   async sendMail(form: NgForm) {
     this.isSubmitted = true;
     if (!this.isChecked) {
-      return; 
+      return;
     }
     this.disableForm();
     let formData = new FormData();
@@ -66,6 +66,13 @@ export class ContactComponent {
     this.isChecked = !this.isChecked;
   }
 
+  closePopupOnOuterClick(event: MouseEvent): void {
+    this.closePrivacyPolicyPopup();
+  }
+
+  stopPropagating(event: MouseEvent): void {
+    event.stopPropagation();
+  }
 
   getFormInformation(formData: any) {
     formData.append('name', this.name);

@@ -140,6 +140,16 @@ span {
 
 }
 
+
+@media screen and (max-width: 1200px) {
+    .projects-btns {
+    
+        button {
+            font-size: 15px;
+        }
+    }
+}
+
 @media screen and (max-width: 999px) {
 
     .first-project {
@@ -167,6 +177,14 @@ span {
         width: 430px;
         margin-top: 32px;
     }
+
+    .projects-btns {
+    
+        button {
+            font-size: 18px;
+        }
+    }
+
 
     h2, h3, span {
         display: flex;

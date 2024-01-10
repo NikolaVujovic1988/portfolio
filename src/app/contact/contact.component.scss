@@ -120,7 +120,7 @@ form {
         flex-direction: column;
         width: 100%;
         margin-bottom: 32px;
-        z-index: 9999;
+        z-index: 99;
 
         .checkbox-container {
             display: flex;
@@ -159,16 +159,21 @@ form {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99999;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
     .popup-content {
-        background-color: white;
+        background-color: #141D2F;
+        color: $white;
         padding: 20px;
-        border-radius: 5px;
+        height: 70svh;
+        width: 80svw;
+        overflow-y: auto;
+        border: 1px solid #00BEE8;
+        border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     }
     

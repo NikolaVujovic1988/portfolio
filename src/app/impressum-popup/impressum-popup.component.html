@@ -1,5 +1,6 @@
-<div class="popup-container" *ngIf="display">
-    <div class="popup-content">
+<div class="popup-container" *ngIf="display" (click)="closePopupOnOuterClick($event)">
+
+    <div class="popup-content" (click)="stopPropagating($event)">
         <div class="headline-close">
             <h1>Impressum</h1>
             <img (click)="closePopup()" src="/assets/images/icons/Property 1=CLOSE FINAL.png" alt="">

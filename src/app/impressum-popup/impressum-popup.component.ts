@@ -16,4 +16,13 @@ export class ImpressumPopupComponent {
     this.display = false;
     this.close.emit();
   }
+
+  closePopupOnOuterClick(event: MouseEvent): void {
+    this.closePopup();
+  }
+
+  stopPropagating(event: MouseEvent): void {
+    event.stopPropagation();
+  }
+
 }
