@@ -91,7 +91,6 @@ $white: #ffffff;
 }
 
 button {
-    background-color: #5cb85c;
     color: $white;
     padding: 10px 30px;
     border: none;
@@ -100,10 +99,26 @@ button {
     font-weight: 300;
     cursor: pointer;
 
+   
+}
+
+.button-inactive {
+    background-color: rgb(164, 164, 164);
+    cursor: not-allowed;
+
+    &:hover {
+        background-color: gray;
+    }
+  }
+  
+.button-active {
+    background-color: #5cb85c;
+    cursor: pointer;
+
     &:hover {
         background-color: #4cae4c;
     }
-}
+  }
 
 form {
     width: 50%;

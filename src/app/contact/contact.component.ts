@@ -74,6 +74,11 @@ export class ContactComponent {
     event.stopPropagation();
   }
 
+  isFormValid() {
+    return this.name && this.email && this.message && this.isChecked;
+  }
+  
+
   getFormInformation(formData: any) {
     formData.append('name', this.name);
     formData.append('message', this.message);

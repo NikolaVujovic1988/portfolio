@@ -63,8 +63,11 @@
             </div>
             <span *ngIf="!isChecked && isSubmitted">Please agree to the privacy policy</span>
         </div>
-        <button data-aos="flip-up" data-aos-duration="2000" type="submit" #sendButton>Send message :) </button>
-        
+        <button data-aos="flip-up" data-aos-duration="2000"
+            [ngClass]="isFormValid() ? 'button-active' : 'button-inactive'" (click)="isFormValid()"
+            type="submit" #sendButton>
+            Send message :)
+        </button>
         <div (click)="closePopupOnOuterClick($event)">
         <div class="privacy-policy-popup" *ngIf="showPopup">
             <div class="popup-content" data-aos="flip-up" data-aos-duration="2000">
