@@ -169,12 +169,22 @@ form {
         background-color: #141D2F;
         color: $white;
         padding: 20px;
-        height: 70svh;
+        max-height: 60svh;
         width: 80svw;
         overflow-y: auto;
         border: 1px solid #00BEE8;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .popup-headline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            height: 22px;
+        }
     }
     
 }
@@ -332,6 +342,9 @@ textarea {
         }
     }
 
+    .popup-headline {
+        font-size: 22px !important;
+    }
     .subheadline-section {
         width: 100% !important;
         margin-right: 0 !important;
@@ -339,6 +352,7 @@ textarea {
 }
 
 @media (max-width: 599px) {
+
     .subheadline-and-form {
 
         .shape-contact {
