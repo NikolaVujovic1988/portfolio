@@ -12,6 +12,13 @@
     background-repeat: no-repeat;
     background-size: contain;
 
+    @media screen and (min-width: 2500px) {
+        .front-page {
+            background-position-y: 10% !important;
+        }
+    }
+
+
 
     .frontpage-image {
 
@@ -220,6 +227,8 @@
 
 @media screen and (min-width: 1600px) {
     .front-page {
+
+        background-position-x: 10%;
         .frontpage-image {
             .profile-image {
                 height: auto;
