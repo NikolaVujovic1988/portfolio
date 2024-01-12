@@ -163,3 +163,9 @@
         width: 80% !important;
     }
 }
+
+@media (max-width: 350px) {
+    .blur-shape {
+        left: -20% !important;
+    }
+}
