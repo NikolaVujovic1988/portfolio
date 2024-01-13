@@ -344,6 +344,10 @@ textarea {
 
 
 @media (max-width: 999px) {
+    .contact-headline {
+        padding-top: 10svh;
+    }
+
     .subheadline-and-form {
         flex-direction: column;
         z-index: 1 !important;
