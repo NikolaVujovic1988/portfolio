@@ -11,6 +11,7 @@
     background-image: url('/assets/images/frontpage-bg-blur.png');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position-x: 5%;
 
     @media screen and (min-width: 2500px) {
         .front-page {
@@ -228,7 +229,7 @@
 @media screen and (min-width: 1600px) {
     .front-page {
 
-        background-position-x: 10%;
+        background-position-x: 10% !important;
         .frontpage-image {
             .profile-image {
                 height: auto;
@@ -274,6 +275,54 @@
         }
     }
 }
+
+@media screen and (min-width: 2500px) {
+    .front-page {
+
+        background-position-x: 15% !important;
+        .frontpage-image {
+            width: 50%;
+        }
+
+        .front-page-headline {
+            .button {
+                margin-top: 5vh;
+
+                button {
+                    padding: 15px 30px;
+                    font-size: 28px;
+
+                    &:hover {
+                        scale: 1.2;
+                        transition: 125ms ease-in-out;
+                        background-color: #9747FF;
+                    }
+                }
+            }
+
+            span {
+                font-size: calc(84px + (100svw - 1600px) * 0.005);
+            }
+
+            .headlines {
+
+                h2 {
+
+                    font-size: calc(90px + (100vw - 1600px) * 0.005);
+                    letter-spacing: 0.08em;
+                }
+
+                h3 {
+                    margin-bottom: 0;
+                    font-weight: 400;
+                    font-size: calc(80px + (100vw - 1600px) * 0.005);
+                }
+
+            }
+        }
+    }
+}
+
 
 
 @media screen and (max-width: 999px) {
