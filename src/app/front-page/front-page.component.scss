@@ -229,13 +229,19 @@
 @media screen and (min-width: 1600px) {
     .front-page {
 
-        background-position-x: 10% !important;
+        background-position-x: 7% !important;
         .frontpage-image {
             .profile-image {
                 height: auto;
                 width: 80%;
             }
         }
+
+        .footer-shape {
+            bottom: -40px;
+            height: 25vh;
+        }
+        
 
         .front-page-headline {
             .button {
@@ -279,7 +285,7 @@
 @media screen and (min-width: 2500px) {
     .front-page {
 
-        background-position-x: 15% !important;
+        background-position-x: 10% !important;
         .frontpage-image {
             width: 50%;
         }
